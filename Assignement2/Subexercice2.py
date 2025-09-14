@@ -8,7 +8,7 @@ arlo = robot.Robot()
 print("Reading loop")
 
 try:
-    while True:
+    for i in range(5):
         # Lecture des 4 sonars
         front  = arlo.read_front_ping_sensor()/10
         left   = arlo.read_left_ping_sensor()/10
@@ -16,7 +16,7 @@ try:
         back   = arlo.read_back_ping_sensor()/10
 
         # Affichage clair dans le terminal
-        print("----- sonar reading -----")
+        print(f"----- sonar reading (Measure {i+1}-----")
         print(f"Front : {front} cm")
         print(f"Left  : {left} cm")
         print(f"Right  : {right} cm")

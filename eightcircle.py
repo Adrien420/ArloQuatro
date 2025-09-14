@@ -17,5 +17,3 @@ for _ in range(5):  # repeat twice for a full 8
 
 
 print(arlo.stop())
-
-
